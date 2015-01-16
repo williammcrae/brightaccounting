@@ -1,0 +1,29 @@
+# Site settings
+title: "Bright Accounting"
+email: info@brightaccounting.com.au
+subtitle: ""
+description: ""
+company: "Bright Accounting Pty Ltd"
+baseurl: ""
+url: "http://www.brightaccounting.com.au/"
+
+# Build settings
+markdown: kramdown
+
+include:     ['.htaccess']
+exclude:     ['vendor','Rakefile','Gemfile','Gemfile.lock','CNAME']
+
+collections:
+- sections
+
+#
+# jekyll-assets: see more at https://github.com/ixti/jekyll-assets
+#
+assets:
+
+  dirname: assets
+  baseurl: /assets/
+  sources:
+    - _assets/javascripts
+    - _assets/stylesheets
+    - _assets/images
