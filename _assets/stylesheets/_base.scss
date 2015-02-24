@@ -82,7 +82,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+  font-weight: 300;
+  font-family: $heading-font-family;
 }
 
 
@@ -171,19 +172,20 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 
-    &.odd {
-        padding-top:15px;
-        background: white;
-        h1, h2, h3, h4, h5, p, a, li {
-         color: #293e58;
-       }
+    &.odd, &.even {
+      border-bottom: 1px solid $orange;
     }
-    &.even {
-        padding-top:15px;
-        background: #868686;
-        h1, h2, h3, h4, h5, p, a, li {
-        color: white;
-        }
+    &:last-child {
+      border-bottom: none;
+    }
+
+    img {
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    h2 {
+      margin-top: $spacing-unit;
     }
 }
 

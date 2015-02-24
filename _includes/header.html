@@ -1,10 +1,6 @@
 <header class="site-header">
 
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}" alt="{{ site.title }}">
-        {% image logo.png %}
-    </a>
-
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -15,12 +11,11 @@
       </a>
 
       <div class="trigger">
-        {% assign sorted_pages = (site.pages | sort: 'weight') %}
-        {% for page in sorted_pages %}
-          {% if page.title %}
-          <a class="page-link" href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+          {% for section in site.sections %}
+          {% if section.title %}
+          <a class="page-link" href="/{{ site.baseurl }}#{{ section.title }}">{{ section.title }}</a>
           {% endif %}
-        {% endfor %}
+          {% endfor %}
       </div>
     </nav>
 
