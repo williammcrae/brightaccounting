@@ -4,7 +4,7 @@ require "tmpdir"
 require "bundler/setup"
 require "jekyll"
 
-GITHUB_REPONAME = "williammcrae/foresight"
+GITHUB_REPONAME = "williammcrae/brightaccounting"
 
 
 namespace :site do

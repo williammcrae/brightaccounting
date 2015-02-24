@@ -49,7 +49,7 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 1px;
+        top: 30px;
         right: 15px;
         background-color: $background-color;
         border: 1px solid $grey-color-light;
@@ -176,6 +176,16 @@
     bottom: 0;
     right: $spacing-unit;
   }
+
+  @include media-query($on-tiny) {
+    .footer-cpa-logo {
+      display: none;
+    }
+
+    .footer-contact-list {
+    }
+
+  }
 }
 
 .footer-heading {
@@ -300,5 +310,14 @@
 .even {
   .odd {
     display: none;
+  }
+}
+
+.where-are-we {
+  a {
+    width: 100%;
+    img {
+      width: 100%;
+    }
   }
 }
